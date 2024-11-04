@@ -15,11 +15,3 @@ else
   map("n", "[b", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
   map("n", "]b", "<cmd>bnext<cr>", { desc = "Next buffer" })
 end
-
-if Util.has("neoai.nvim") then
-  map("n", "<leader>aa", "<cmd>NeoAIToggle<cr>", { desc = "enable NeoAI" })
-  map("n", "<leader>ai", "<cmd>NeoAIInject<cr>", { desc = "inject the result from AI" })
-  map("n", "<leader>af", "<cmd>NeoAIContext<cr>", { desc = "ask AI with context" })
-  map("n", "<leader>ad", "<cmd>NeoAIInjectCode<cr>", { desc = "inject code" })
-  map("n", "<leader>ac", "<cmd>NeoAIInjectContext<cr>", { desc = "inject context" })
-end
